@@ -69,7 +69,9 @@ body {
   white-space: nowrap;
   line-height: 60px; /* Vertically center the text there */
 }
-/* Customizing the margins of the <p> & <hr>: */
+
+/*---------------------------- Additional CSS -----------------------------*/
+/* Customizing the margins of the main <p> & all <hr>s: */
 p, hr {
   margin: 20px 255px;
 }
@@ -84,7 +86,7 @@ p, hr {
 
 #musicalNotes {
   position: absolute;
-  width: 60px;
-  height: 60px;
+  width: 100px;
+  height: 100px;
   background: lightgrey;
 }
