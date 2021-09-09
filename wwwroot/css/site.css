@@ -69,3 +69,7 @@ body {
   white-space: nowrap;
   line-height: 60px; /* Vertically center the text there */
 }
+/* Customizing the margins of the <p> & <hr>: */
+p, hr {
+    margin: 20px 255px;
+}
