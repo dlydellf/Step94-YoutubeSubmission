@@ -8,9 +8,9 @@ function moveNotes() {
     var notes = document.getElementById("musicalNotes");
     var pos = 0;
     clearInterval(id);
-    id = setInterval(frame, 10);
+    id = setInterval(frame, 5);
     function frame() {
-        if (pos == 440) {
+        if (pos == 1040) {
             clearInterval(id)
         } else {
             pos++;
