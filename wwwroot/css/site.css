@@ -71,5 +71,20 @@ body {
 }
 /* Customizing the margins of the <p> & <hr>: */
 p, hr {
-    margin: 20px 255px;
+  margin: 20px 255px;
+}
+
+/* Animation of falling 'Musical Notes': */
+#bodyContainer {
+  border: 1px solid grey;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+#musicalNotes {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background: lightgrey;
 }
