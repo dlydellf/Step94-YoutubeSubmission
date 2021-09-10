@@ -86,9 +86,6 @@ p, hr {
 
 #musicalNotes {
   position: absolute;
-  width: 100px;
-  height: 100px;
-  background: lightgrey;
 }
 
 button {
