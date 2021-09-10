@@ -86,7 +86,7 @@ p, hr {
 
 #musicalNotes {
   position: absolute;
-  margin-left: -500px;
+  left: 100px;
   opacity: 0;
 }
 
