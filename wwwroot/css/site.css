@@ -81,11 +81,13 @@ p, hr {
   border: 1px solid grey;
   position: relative;
   width: 100%;
-  height: 100%;
+  height: 80%;
 }
 
 #musicalNotes {
   position: absolute;
+  margin-left: -500px;
+  opacity: 0;
 }
 
 button {
