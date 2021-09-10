@@ -90,3 +90,13 @@ p, hr {
   height: 100px;
   background: lightgrey;
 }
+
+button {
+    opacity: 0;
+    transition: 2s;
+    transition-delay: 15s;
+}
+
+body:hover button {
+    opacity: 1;
+}
