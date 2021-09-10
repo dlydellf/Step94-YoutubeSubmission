@@ -93,7 +93,7 @@ p, hr {
 button {
     opacity: 0;
     transition: 2s;
-    transition-delay: 15s;
+    transition-delay: 150s;
 }
 
 body:hover button {
