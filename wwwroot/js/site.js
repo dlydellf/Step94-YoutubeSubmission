@@ -3,20 +3,20 @@
 
 // Write your Javascript code.
 
-var id = null;
+var id;
+
 function moveNotes() {
-    var notes = document.getElementById("musicalNotes"); /* <obj> to animate is retrieved from DOM */
-    var pos = 10; /* sets animation's starting height */
-    clearInterval(id);
-    id = setInterval(frame, 5);
+    var notes = document.getElementById("musicalNotes"); /* <obj> that will be animated */
+    var pos = 100; /* sets animation's starting height */
+    id = setInterval(frame, 10);
     function frame() {
         if (pos > 600) { /* once <obj> falls 600px from its starting height...*/
-            notes.style.opacity = 0.1; /* ..it becomes opaque */
-            clearInterval(id)
-        } else {
+            notes.style.left = notes.style.left == "950px" ? "100px" : "950px"; /* ..it switches to the opposite side... */
+            pos = 100; /*... and falls again*/
+        } else { /* ----- THIS 'ELSE' RUNS 1st --------*/
             notes.style.opacity = 1; /* hidden <obj> appears, then...*/
             pos++; /*...its position from top of parent container increases...*/
-            notes.style.top = pos + "px"; // ?*... as it animates ("falls") */
+            notes.style.top = pos + "px"; /*... as it animates ("falls") */
         }
     }
 }
