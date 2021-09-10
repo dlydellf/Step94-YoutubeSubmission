@@ -5,16 +5,18 @@
 
 var id = null;
 function moveNotes() {
-    var notes = document.getElementById("musicalNotes");
-    var pos = 0;
+    var notes = document.getElementById("musicalNotes"); /* <obj> to animate is retrieved from DOM */
+    var pos = 10; /* sets animation's starting height */
     clearInterval(id);
     id = setInterval(frame, 5);
     function frame() {
-        if (pos == 1040) {
+        if (pos > 600) { /* once <obj> falls 600px from its starting height...*/
+            notes.style.opacity = 0.1; /* ..it becomes opaque */
             clearInterval(id)
         } else {
-            pos++;
-            notes.style.top = pos + "px"; // to animate musicalNotes as "falling"
+            notes.style.opacity = 1; /* hidden <obj> appears, then...*/
+            pos++; /*...its position from top of parent container increases...*/
+            notes.style.top = pos + "px"; // ?*... as it animates ("falls") */
         }
     }
 }
